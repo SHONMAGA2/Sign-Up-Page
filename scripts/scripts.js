@@ -11,4 +11,4 @@ form.addEventListener('submit', function(event) {
      console.log('Email:', email);
      console.log('Password:', password);
 
-});
+}); 
