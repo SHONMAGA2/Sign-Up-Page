@@ -1,0 +1,32 @@
+#sign_up_form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:15rem;
+}
+
+#sign_up_form input{
+    width:20rem;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+
+}
+
+#sign_up_form button {
+    width:max-content;
+    padding:5px 15px;
+    border-radius: 10px;
+}
+
+header h1{
+    text-align: center;
+    margin-top:3rem;
+
+}
+
+body{
+    background-color: maroon;
+    color: aliceblue;
+}
