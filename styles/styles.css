@@ -1,9 +1,20 @@
+:root{
+    --burgundy-primary: #5A1E2D;
+    --charcoal-secondary: #121212;
+    --offwhite-base: #F4F1EE;
+    --gold-accent: #C9A24D; 
+    --slate-utility: #6E6E73;
+}
+
 #sign_up_form{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top:15rem;
+    background-color: var(--offwhite-base);
+    border:solid 2px var(--slate-utility);
+    box-shadow:2px 4px rgba(255,255,255,0.1);
 }
 
 #sign_up_form input{
@@ -11,22 +22,60 @@
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 10px;
+    background-color: var(--offwhite-base);
+    border:var(--slate-utility);
+    color: var(--charcoal-secondary);
+    place-content: var(--slate-utility);
 
+}
+
+input:focus-visible{
+    border: var(--burgundy-primary);
 }
 
 #sign_up_form button {
     width:max-content;
     padding:5px 15px;
     border-radius: 10px;
+    background-color: var(--burgundy-primary);
+    color:var(--offwhite-base);
+}
+
+button:hover{
+    background-color: maroon;
+}
+
+button:active{
+    box-shadow: 1px 2px rgba(1,1,1,0.1);
+
 }
 
 header h1{
     text-align: center;
     margin-top:3rem;
-
+    color: var(--burgundy-primary);
+    background-color: var(--offwhite-base);
+    padding:2rem:
 }
 
 body{
-    background-color: maroon; 
+    background-color: var(--charcoal-secondary); 
     color: aliceblue;
+}
+
+.headline{
+    display:flex;
+    color: var(--burgundy-primary);
+    font-weight: bold;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li{
+    color:var(--charcoal-secondary);
+}
+
+#sign_up_form h1 h2{
+color:var(--charcoal-secondary);
 }
