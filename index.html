@@ -11,14 +11,26 @@
 
         <header>
             <h1>Sign Up - Burgundary</h1>
+            <h2>Build, launch, and manage your projects in one place.</h2>
+            <h3>Track progress, collaborate faster , and scale without chaos.</h3>
         </header>
         <main>
             <Section id="form_sign_up">
                 <form id="sign_up_form">
-                <input type="text" name="name" placeholder="enter your name" required>
-                <input type="email" name="email" placeholder="enter your email" required>
-                <input type="password" name="password" placeholder="enter your password" required>
-                <button id="submit_button" type="submit">Submit</button>
+                    <h1>Create your account</h1>
+                <input type="text" name="name" placeholder="Full name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <label id="password_guidence" for="password_guidance">
+                    <h2>password guidence</h2>
+                    <ul>
+                        <li>Atleast 8 characters</li>
+                        <li>One number</li>
+                        <li>One symbol</li>
+                    </ul>
+                </label>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm password">
+                <button id="submit_button" type="submit">Create account</button>
             </form>
             </Section>
             
