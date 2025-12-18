@@ -6,61 +6,21 @@
     --slate-utility: #6E6E73;
 }
 
-#sign_up_form{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top:15rem;
-    background-color: var(--offwhite-base);
-    border:solid 2px var(--slate-utility);
-    box-shadow:2px 4px rgba(255,255,255,0.1);
+/* Body */
+body{
+    background-color: var(--charcoal-secondary); 
+    color: var(--offwhite-base);
+    font-family: 'Inter', sans-serif;
+    margin:0;
 }
 
-#sign_up_form input{
-    width:20rem;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    background-color: var(--offwhite-base);
-    border:var(--slate-utility);
-    color: var(--charcoal-secondary);
-    place-content: var(--slate-utility);
-
-}
-
-input:focus-visible{
-    border: var(--burgundy-primary);
-}
-
-#sign_up_form button {
-    width:max-content;
-    padding:5px 15px;
-    border-radius: 10px;
-    background-color: var(--burgundy-primary);
-    color:var(--offwhite-base);
-}
-
-button:hover{
-    background-color: maroon;
-}
-
-button:active{
-    box-shadow: 1px 2px rgba(1,1,1,0.1);
-
-}
-
+/* Header */
 header h1{
     text-align: center;
     margin-top:3rem;
     color: var(--burgundy-primary);
     background-color: var(--offwhite-base);
-    padding:2rem:
-}
-
-body{
-    background-color: var(--charcoal-secondary); 
-    color: aliceblue;
+    padding:2rem;
 }
 
 .headline{
@@ -72,10 +32,81 @@ body{
     flex-direction: column;
 }
 
-li{
-    color:var(--charcoal-secondary);
+/* Form Section */
+#form_sign_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5rem;
 }
 
-#sign_up_form h1 h2{
-color:var(--charcoal-secondary);
+#sign_up_form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    background-color: var(--offwhite-base);
+    border: 2px solid var(--slate-utility);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+#sign_up_form input{
+    width: 20rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: var(--offwhite-base);
+    border: 1px solid var(--slate-utility);
+    color: var(--charcoal-secondary);
+}
+
+#sign_up_form input::placeholder{
+    color: var(--slate-utility);
+}
+
+#sign_up_form input:focus{
+    border: 2px solid var(--burgundy-primary);
+    outline: none;
+}
+
+/* Buttons */
+#sign_up_form button {
+    width: max-content;
+    padding:10px 25px;
+    border-radius: 10px;
+    background-color: var(--burgundy-primary);
+    color: var(--offwhite-base);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#sign_up_form button:hover{
+    background-color: #4B1725;
+}
+
+#sign_up_form button:active{
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Labels & Guidance */
+#password_guidence h2{
+    color: var(--charcoal-secondary);
+    margin-bottom:0.5rem;
+}
+
+#password_guidence ul li{
+    color: var(--charcoal-secondary);
+    font-size: 0.9rem;
+}
+
+/* Headings inside form */
+#sign_up_form h1{
+    color: var(--charcoal-secondary);
+    margin-bottom: 1rem;
 }
