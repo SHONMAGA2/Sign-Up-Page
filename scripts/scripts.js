@@ -11,10 +11,11 @@ form.addEventListener('submit', async function(event) {
     const confirm_password = formData.get('confirm_password');
 
     // Check if passwords match
-    if (user_password !== confirm_password) {
+    if (confirm_password !== user_password) {
         alert("Passwords do not match!");
         return; // Stop form submission
     }
+
 
     try {
         const response = await fetch("https://8cfe057e-f218-49e2-a3f0-6fbef0471e31-00-2u2eeiqy75xzi.riker.replit.dev/signUp", {
@@ -42,3 +43,5 @@ form.addEventListener('submit', async function(event) {
         alert("Error: " + error.message);
     }
 });
+
+
